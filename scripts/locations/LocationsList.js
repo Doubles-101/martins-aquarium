@@ -3,7 +3,7 @@ import { getLocations } from '../database.js'
 export const LocationsList = () => {
     const locations = getLocations()
 
-    let htmlString = '<article class="locationsList"><ul>'
+    let htmlString = '<article class="locationsList"><ul class="ultimateLocation--list">'
 
     for (const location of locations) {
 
