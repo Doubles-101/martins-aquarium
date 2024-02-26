@@ -1800,9 +1800,81 @@ const database = {
             location: "United States (Great Basin National Park)",
             quote: "I love Panama"
         },
+    ],
+    tips: [
+        {
+            id: 1,
+            title: "Change water regularly",
+            description: "The properties of your tank’s water is crucial to the long-term well-being of your fish."
+        },
+        {
+            id: 2,
+            title: "Acclimate your fish to the water",
+            description: "Many fish species are delicate and thus, without proper acclimation, they may go through shock."
+        },
+        {
+            id: 3,
+            title: "Maintain pH balance and other chemical levels",
+            description: "You can monitor your tank’s pH  levels by purchasing a pH test kit."
+        },
+        {
+            id: 4,
+            title: "Make sure water temperature is right",
+            description: "Your tank’s water temperature should be comfortable enough to sustain aquatic life."
+        }
+    ],
+    locations: [
+        {
+            id: 1, 
+            location: "USA"
+        },
+        {
+            id: 2, 
+            location: "Mexico"
+        },
+        {
+            id: 3, 
+            location: "Panama"
+        },
+        {
+            id: 4, 
+            location: "China"
+        },
+        {
+            id: 5, 
+            location: "Japan"
+        },
+        {
+            id: 6, 
+            location: "Spain"
+        },
+        {
+            id: 7, 
+            location: "Italy"
+        },
+        {
+            id: 8, 
+            location: "South Africa"
+        },
+        {
+            id: 9, 
+            location: "New Zealand"
+        },
+        {
+            id: 10, 
+            location: "Brazil"
+        }
     ]
 }
 
 export const getFish = () => {
     return database.fish.map(fish => ({...fish}))
+}
+
+export const getTips = () => {
+    return database.tips.map(tips => ({...tips}))
+}
+
+export const getLocations = () => {
+    return database.locations.map(locations => ({...locations}))
 }

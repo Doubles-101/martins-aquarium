@@ -1,4 +1,6 @@
-import { FishList } from "./FishList.js"
+import { FishList } from "./fish/FishList.js"
+import { TipsList } from "./tips/TipsList.js"
+import { LocationsList } from "./locations/LocationsList.js"
 
 /*
     What is the CSS selector for the element where you
@@ -11,3 +13,5 @@ const parentHTMLElement = document.querySelector("#container")
 
 
 parentHTMLElement.innerHTML = FishList()
+parentHTMLElement.innerHTML += TipsList()
+parentHTMLElement.innerHTML += LocationsList()
