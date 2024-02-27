@@ -1,3 +1,8 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
 .title {
     display: flex;
     justify-content: center;
@@ -11,6 +16,7 @@
 #container {
     display: flex;
     flex-wrap: wrap;
+    
 }
 
 
@@ -68,7 +74,14 @@
 }
 
 /* Locations */
-.ultimateLocation--list {
-    width: 100%;
+.locationsList {
+    width: 2000px;
     background-color: lightblue;
+    margin-top: 20px;
+    padding: 20px;
+    padding-bottom: 30px;
+}
+
+.ultimateLocation--list {
+
 }
