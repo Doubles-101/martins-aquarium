@@ -1877,8 +1877,43 @@ const database = {
     ]
 }
 
-export const getFish = () => {
-    return database.fish.map(fish => ({...fish}))
+export const mostHolyFish = () => {
+    // 3, 6, 9, 12, etc... fish
+    const holyFish = []
+
+
+    for (const holy of database.fish) {
+        if (holy.size % 3 === 0) {
+            holyFish.push(holy)
+        }
+    }
+
+    return holyFish
+}
+
+export const soldierFish = () => {
+    // 5, 10, 15, 20, 25, etc... fish
+    const soldiers = []
+
+    for (const soldier of database.fish) {
+        if (soldier.size % 5 === 0) {
+            soldiers.push(soldier)
+        }
+    }
+    return soldiers
+}
+
+export const nonHolyFish = () => {
+    // Any fish not a multiple of 3 or 5
+    const regularFish = []
+
+    for (const regular of database.fish) {
+        if (regular.size % 5 != 0 && regular.size % 3 != 0) {
+            regularFish.push(regular)
+        }
+    }
+    
+    return regularFish
 }
 
 export const getTips = () => {

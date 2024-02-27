@@ -11,6 +11,8 @@ body, html {
     margin-right: auto;
     font-family: "open sans";
     font-size: 200%;
+    color: white;
+    background-color: cornflowerblue;
 }
 
 #container {
@@ -35,11 +37,12 @@ body, html {
     flex-direction: column;
     width: 150px;
     height: 210px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin: 15px;
     padding: 15px;
     border-radius: 10px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: antiquewhite;
 }
 
 .fish__image {
@@ -76,7 +79,8 @@ body, html {
 /* Locations */
 .locationsList {
     width: 2000px;
-    background-color: lightblue;
+    color: white;
+    background-color: cornflowerblue;
     margin-top: 20px;
     padding: 20px;
     padding-bottom: 30px;

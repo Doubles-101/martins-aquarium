@@ -1,11 +1,12 @@
-import { getFish } from '../database.js'
+import { mostHolyFish, soldierFish, nonHolyFish } from '../database.js'
 
 export const FishList = () => {
-    const fishes = getFish()
 
+    const sortedFish = mostHolyFish().concat(soldierFish()).concat(nonHolyFish())
+    
     let htmlString = '<article class="fishList">'
 
-    for (const fish of fishes) {
+    for (const fish of sortedFish) {
 
         htmlString += `<section class="fish--card">
             <div><img  class="fish__image image--card" src="${fish.image}" /></div>
